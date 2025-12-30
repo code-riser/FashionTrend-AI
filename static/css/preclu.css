@@ -1,0 +1,177 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f1624;
+    color: #e0e6f0;
+}
+
+a {
+    text-decoration: none;
+    color: #00fff0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0b0f1a;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo i {
+    margin-right: 10px;
+    color: #00fff0;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #00fff0;
+    color: #0f1624;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    padding: 40px;
+    background: linear-gradient(90deg, #1a2238, #0b0f1a);
+    text-align: center;
+    border-bottom: 2px solid #1a2a44;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #00fff0;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    color: #cfd8e8;
+}
+
+/* ================= UPLOAD BOX ================= */
+.upload-box {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.upload-box input[type="file"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #1a2a44;
+    background-color: #0f1624;
+    color: #e0e6f0;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    background-color: #00fff0;
+    color: #0f1624;
+}
+
+.btn-primary:hover {
+    background-color: #00d4c0;
+}
+
+/* ================= FLASH MESSAGES ================= */
+.flash-messages {
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.flash {
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.flash.success {
+    background-color: #00ff72;
+    color: #0f1624;
+}
+
+.flash.danger {
+    background-color: #ff4d4f;
+    color: #fff;
+}
+
+/* ================= TABLE DISPLAY ================= */
+.table-container {
+    margin: 20px auto;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #1a2a44;
+    text-align: left;
+}
+
+.table th {
+    background-color: #0b0f1a;
+    color: #00fff0;
+}
+
+.table td {
+    background-color: #10182d;
+    color: #e0e6f0;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    padding: 20px 40px;
+    background-color: #0b0f1a;
+    text-align: center;
+    border-top: 2px solid #1a2a44;
+    color: #cfd8e8;
+    font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .upload-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}

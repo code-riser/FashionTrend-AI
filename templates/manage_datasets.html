@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Datasets | Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/manage.css') }}">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5cf24;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #e61111;
+        }
+        .dataset-card {
+            width: 90%;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #10c0df;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .dataset-card h3 {
+            margin: 0 0 10px 0;
+            color: #613b3b;
+        }
+        .dataset-card p {
+            margin: 5px 0;
+            color: #777;
+        }
+        table.data-preview {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table.data-preview th, table.data-preview td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: center;
+        }
+        table.data-preview th {
+            background-color: #08010144;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📁 Manage CSV Datasets</h1>
+
+
+        <div class="dataset-card">
+            <h3>fashion_trend.csv</h3>
+            <p>Uploaded By: Md. Sahid Alam | Date: 31 December 2025</p>
+            <div> Fully Safe</div>
+        </div>
+    
+    <p style="text-align:center; color:green;">datasets found in the data folder.</p>
+
+
+<link rel="stylesheet" href="../static/css/">
+
+</body>
+</html>

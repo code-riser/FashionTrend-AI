@@ -1,0 +1,211 @@
+/* ================= GLOBAL STYLES ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f1624;
+    color: #e0e6f0;
+}
+
+a {
+    text-decoration: none;
+    color: #00fff0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0b0f1a;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo i {
+    margin-right: 10px;
+    color: #00fff0;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #00fff0;
+    color: #0f1624;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-logout {
+    margin-left: 15px;
+    padding: 6px 12px;
+    background-color: #ff4d4f;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #ff7875;
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 40px;
+    background: linear-gradient(90deg, #1a2238, #0b0f1a);
+    text-align: center;
+    border-bottom: 2px solid #1a2a44;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #00fff0;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #cfd8e8;
+}
+
+/* ================= ADMIN SECTIONS ================= */
+.admin-section {
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1a2a44;
+}
+
+.admin-section h2 {
+    font-size: 1.5rem;
+    color: #00fff0;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.upload-box input[type="file"] {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #1a2a44;
+    background-color: #0f1624;
+    color: #e0e6f0;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    background-color: #00fff0;
+    color: #0f1624;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00d4c0;
+}
+
+/* ================= DATASET TABLE ================= */
+.dataset-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.dataset-list th, .dataset-list td {
+    padding: 12px;
+    border: 1px solid #1a2a44;
+    text-align: left;
+}
+
+.dataset-list th {
+    background-color: #0b0f1a;
+    color: #00fff0;
+}
+
+.dataset-list td {
+    background-color: #10182d;
+}
+
+.btn-secondary {
+    padding: 6px 12px;
+    background-color: #ff9500;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    background-color: #ffa733;
+}
+
+/* ================= ADMIN GRID ================= */
+.admin-grid, .analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.admin-card, .analytics-card {
+    background-color: #10182d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.admin-card:hover, .analytics-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-card h3, .analytics-card h3 {
+    color: #00fff0;
+    margin-bottom: 10px;
+}
+
+.status.active {
+    color: #00ff72;
+    font-weight: 600;
+}
+
+.status.inactive {
+    color: #ff4d4f;
+    font-weight: 600;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    padding: 20px 40px;
+    background-color: #0b0f1a;
+    text-align: center;
+    border-top: 2px solid #1a2a44;
+    color: #cfd8e8;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FashionTrend AI | Advanced Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>FashionTrend<span class="ai">AI</span></span>
+    </div>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="user_analytics.html">AI Analysis</a>
+        <a href="manage_datasets.html">Dataset</a>
+        <a href="fashion_products.html">Insights</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <div class="user-actions">
+        <span class="user-role">Md. Sahid Alam</span>
+        <a href="index.html" class="btn-logout">Logout</a>
+    </div>
+</header>
+
+<!-- HERO / STATS -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>📊 Fashion Analytics Dashboard</h1>
+        <p>Monitor real-time sales trends, category performance, seasonal insights, and customer behavior using AI-powered analytics.</p>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <h3>Total Sales</h3>
+                <p>1050</p>
+                <p>5096</p>
+                <p>1376</p>
+                <p>6643</p>
+                <p>9856</p>
+                <p>7654</p>
+            </div>
+            <div class="stat-card">
+                <h3>Top Category</h3>
+                <p>T-shirts</p>
+                <p> Hoodies</p>
+                <p>Footwear </p>
+                <p>Jeans</p>
+                <p>Handbags</p>
+                <p>Jewelry</p>
+            </div>
+            <div class="stat-card">
+                <h3>Trending Season</h3>
+                <p>Summer</p>
+                <p>Winter</p>
+                <p>Winter</p>
+                <p>summer</p>
+                <p>both</p>
+                <p>both</p>
+            </div>
+            <div class="stat-card">
+                <h3>Low Demand Items</h3>
+                <p>weddings</p>
+                <p>Child Toys</p>
+                <p>Farmers Equipments</p>
+                <p>Calcy</p>
+                <p>Cycle</p>
+                <p>Out-of-Season Item</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORY PERFORMANCE -->
+<section class="dashboard">
+    <h2>Category Performance</h2>
+    <div class="dashboard-grid">
+        MEN
+        <div class="dashboard-card">
+            <h3>Weddings</h3>
+            <p class="metric">3454</p>
+            <span class="trend {% if category.trend == 'up' %}up{% elif category.trend == 'down' %}down{% else %}stable{% endif %}">
+                
+            </span>
+        </div>
+        
+    </div>
+</section>
+
+<!-- CUSTOMER SEGMENTATION -->
+<section class="dashboard">
+    <h2>Customer Segmentation</h2>
+    <div class="dashboard-grid">
+        ALL
+        <div class="dashboard-card">
+            <h3>Retentio</h3>
+            <p> 1000+  Customers</p>
+            <span class="trend stable">Women</span>
+        </div>
+        
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        © 2026 FashionTrend AI | Minor in AI Project<br>
+        Built with Flask, Python & Machine Learning
+    </p>
+</footer>
+<link rel="stylesheet" href="../static/css/test.css">
+</body>
+</html>

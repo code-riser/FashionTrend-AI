@@ -1,0 +1,21 @@
+product_id,product_name,category,sub_category,gender,season,brand,color,material,price,discount_percent,final_price,stock_quantity,sold_quantity,rating,review_count,trend_score,region
+F001,Classic White Sneakers,Footwear,Sneakers,Unisex,All Season,Nike,White,Leather,4999,20,3999,120,95,4.6,320,88,India
+F002,Denim Blue Jacket,Clothing,Jackets,Men,Winter,Levis,Blue,Denim,6999,15,5949,80,60,4.4,210,82,India
+F003,Floral Summer Dress,Clothing,Dresses,Women,Summer,Zara,Red,Cotton,3999,10,3599,150,130,4.7,410,92,India
+F004,Black Slim Fit Jeans,Clothing,Jeans,Men,All Season,Pepe Jeans,Black,Denim,4499,25,3374,200,170,4.5,390,90,India
+F005,Running Sports Shoes,Footwear,Sports Shoes,Men,All Season,Adidas,Gray,Mesh,5999,30,4199,100,85,4.6,280,89,India
+F006,Cotton Kurti Set,Ethnic Wear,Kurti Sets,Women,Summer,Biba,Green,Cotton,3499,20,2799,140,120,4.8,500,94,India
+F007,Hooded Sweatshirt,Clothing,Hoodies,Unisex,Winter,Puma,Black,Fleece,2999,10,2699,90,70,4.3,160,76,India
+F008,Formal Leather Belt,Accessories,Belts,Men,All Season,Tommy Hilfiger,Brown,Leather,1999,5,1899,110,75,4.4,140,70,India
+F009,Ankle Length Boots,Footwear,Boots,Women,Winter,H&M,Black,Suede,5499,20,4399,60,45,4.5,190,84,India
+F010,Printed Cotton Shirt,Clothing,Shirts,Men,Summer,Allen Solly,White,Cotton,2499,15,2124,180,150,4.6,330,91,India
+F011,Silk Saree,Ethnic Wear,Sarees,Women,All Season,Sabyasachi,Maroon,Silk,15999,10,14399,40,32,4.9,620,97,India
+F012,Activewear Track Pants,Clothing,Track Pants,Men,All Season,Reebok,Navy Blue,Polyester,2799,20,2239,130,100,4.5,260,85,India
+F013,Designer Handbag,Accessories,Bags,Women,All Season,Guess,Beige,PU Leather,7999,25,5999,70,55,4.6,310,88,India
+F014,Casual Flip Flops,Footwear,Slippers,Men,Summer,Bata,Blue,Rubber,999,10,899,300,240,4.2,180,68,India
+F015,Woolen Muffler,Accessories,Scarves,Unisex,Winter,Muji,Gray,Wool,1499,15,1274,85,60,4.4,120,74,India
+F016,High Waist Skirt,Clothing,Skirts,Women,Summer,Forever 21,Pink,Polyester,2999,20,2399,95,80,4.5,210,86,India
+F017,Sports Compression T-Shirt,Clothing,T-Shirts,Men,All Season,Under Armour,Black,Spandex,3499,18,2869,120,90,4.6,275,89,India
+F018,Wedding Sherwani,Ethnic Wear,Sherwani,Men,Wedding Season,Manyavar,Cream,Silk Blend,24999,12,21999,30,24,4.9,540,96,India
+F019,Leather Wallet,Accessories,Wallets,Men,All Season,Wildcraft,Brown,Leather,1799,10,1619,160,130,4.4,200,78,India
+F020,Party Wear Gown,Clothing,Gowns,Women,Party Season,Zara,Black,Chiffon,9999,22,7799,50,38,4.7,420,93,India

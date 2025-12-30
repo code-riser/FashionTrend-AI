@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FashionTrend AI | Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<!-- ================= ADMIN HEADER ================= -->
+<header class="main-header">
+    <div class="logo">
+        <i class="fa-solid fa-cogs"></i>
+        <span>FashionTrend<span class="ai">AI</span></span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="user_analytics.html">AI Analysis</a>
+        <a href="dataset_management.html">Dataset</a>
+        <a href="fashion_products.html">Insights</a>
+        <a href="admin.html" class="active">Admin</a>
+    </nav>
+
+    <div class="user-actions">
+        <span class="user-role">Md. Sahid Alam</span>
+        <a href="index.html" class="btn-logout">Logout</a>
+    </div>
+</header>
+
+<!-- ================= ADMIN HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>🔐 Admin Panel</h1>
+        <p>Manage datasets, train ML models, and monitor user analytics.</p>
+    </div>
+</section>
+
+<!-- ================= DATASET MANAGEMENT ================= -->
+<section class="admin-section">
+    <h2>📁 Dataset Management</h2>
+    <form action="manage_datasets.html" method="POST" enctype="multipart/form-data" class="upload-box">
+        <input type="file" name="dataset" accept=".csv" required>
+        <button type="submit" class="btn-primary">
+            <i class="fa-solid fa-upload"></i> Upload & Analyze
+        </button>
+    </form>
+
+    <div class="dataset-list">
+        <h3>Uploaded Datasets</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Filename</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>fashion_design.csv</td>
+                    <td>
+                        <a href="{{ url_for('delete_dataset', filename=dataset.filename) }}" class="btn-secondary">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>fashion_marketing.csv</td>
+                    <td>
+                        <a href="{{ url_for('delete_dataset', filename=dataset.filename) }}" class="btn-secondary">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>fashion_model.csv</td>
+                    <td>
+                        <a href="{{ url_for('delete_dataset', filename=dataset.filename) }}" class="btn-secondary">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>trend_design.csv</td>
+                    <td>
+                        <a href="{{ url_for('delete_dataset', filename=dataset.filename) }}" class="btn-secondary">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>fashion_trend.csv</td>
+                    <td>
+                        <a href="{{ url_for('delete_dataset', filename=dataset.filename) }}" class="btn-secondary">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ================= MODEL CONTROLS ================= -->
+<section class="admin-section">
+    <h2>🤖 Model Controls</h2>
+    <div class="admin-grid">
+        <div class="admin-card">
+            <h3>Train Trend Model</h3>
+            <form action="model_control.html" method="POST">
+                <button class="btn-primary">Train Model</button>
+            </form>
+        </div>
+        <div class="admin-card">
+            <h3>Train Customer Segmentation</h3>
+            <form action="predict.html" method="POST"> <link rel="stylesheet" href="predict.html">
+                <button class="btn-primary"  >Train Clustering</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ================= USER ANALYTICS ================= -->
+<section class="admin-section">
+    <h2>📊 User Analytics</h2>
+    <div class="analytics-grid">
+        Md. Sahid Alam
+        <div class="analytics-card">
+            <h3>mdsahidalam7860@gmail.com</h3>
+            <p>Role: Admin</p>
+            <p>Last Login: 31 december 2025</p>
+            <span class="status {% if user.active %}active{% else %}inactive{% endif %}">
+                
+            </span>
+        </div>
+        
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>
+        © 2026 FashionTrend AI | Minor in AI Project  
+        <br>
+        Admin panel built with Flask & Python
+    </p>
+</footer>
+<link rel="stylesheet" href="../static/css/admin2.css">
+</body>
+</html>
+

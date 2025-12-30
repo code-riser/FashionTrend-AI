@@ -1,0 +1,136 @@
+/* ===============================
+   GLOBAL RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f7f8fc, #eef1f6);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ===============================
+   PAGE TITLE
+================================ */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2c2f4a;
+}
+
+/* ===============================
+   DATASET CARD
+================================ */
+.dataset-card {
+    width: 92%;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 20px 25px;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 6px solid #6c63ff;
+}
+
+.dataset-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   DATASET HEADER
+================================ */
+.dataset-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f1f3d;
+    margin-bottom: 6px;
+}
+
+.dataset-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   DATA PREVIEW TABLE
+================================ */
+table.data-preview {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* TABLE HEAD */
+table.data-preview th {
+    background: linear-gradient(135deg, #6c63ff, #5a54d1);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+/* TABLE BODY */
+table.data-preview td {
+    padding: 9px 10px;
+    font-size: 13px;
+    color: #444;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* STRIPED ROWS */
+table.data-preview tr:nth-child(even) {
+    background-color: #f4f6fb;
+}
+
+/* HOVER EFFECT */
+table.data-preview tr:hover td {
+    background-color: #eceeff;
+    transition: 0.2s;
+}
+
+/* ===============================
+   EMPTY DATA MESSAGE
+================================ */
+p[style*="color:red"] {
+    background: #ffecec;
+    padding: 12px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 40px auto;
+    font-weight: 500;
+    color: #c0392b !important;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .dataset-card {
+        padding: 15px;
+    }
+
+    table.data-preview th,
+    table.data-preview td {
+        font-size: 12px;
+        padding: 7px;
+    }
+}

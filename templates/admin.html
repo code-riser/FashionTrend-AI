@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FashionTrend AI | Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+ 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+    <div class="logo">
+        <i class="fa-solid fa-user-shield"></i>
+        <span>FashionTrend<span class="ai">AI</span></span>
+    </div>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="predict.html">AI Analysis</a>
+        <a href="cluster.html">Dataset</a>
+        <a href="fashion_products.html">Insights</a>
+        <a href="admin2.html" class="active">Admin</a>
+    </nav>
+    <div class="user-actions">
+        <span class="user-role">MD. SAHID ALAM</span>
+        <a href="index.html" class="btn-logout">Logout</a>
+    </div>
+</header>
+
+<!-- ================= ADMIN DASHBOARD ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>🔐 Admin Control Panel</h1>
+        <p>Manage datasets, train ML models, monitor users, and control AI analytics.</p>
+    </div>
+</section>
+
+<!-- ================= ADMIN CARDS ================= -->
+<section class="dashboard">
+    <h2>Admin Modules</h2>
+    <div class="dashboard-grid">
+        <!-- Dataset Management -->
+        <div class="dashboard-card">
+            <h3>📁 Dataset Management</h3>
+            <p>View, upload, update, or delete CSV datasets for analysis.</p>
+            <a href="dataset_management.html" class="btn-secondary">Manage Datasets</a>
+        </div>
+
+        <!-- Model Management -->
+        <div class="dashboard-card">
+            <h3>🤖 Model Controls</h3>
+            <p>Train, retrain, evaluate, or reset ML models.</p>
+            <a href="model_control.html" class="btn-secondary">Manage Models</a>
+        </div>
+
+        <!-- User Analytics -->
+        <div class="dashboard-card">
+            <h3>👥 User Analytics</h3>
+            <p>Monitor user activity, trends, and AI usage metrics.</p>
+            <a href="manage_datasets.html" class="btn-secondary">View Analytics</a>
+        </div>
+
+        <!-- System Logs -->
+        <div class="dashboard-card">
+            <h3>📄 System Logs</h3>
+            <p>Track recent system activity, errors, and performance logs.</p>
+            <a href="system_logs.html" class="btn-secondary">View Logs</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ADMIN TABLE EXAMPLE ================= -->
+<section class="dashboard">
+    <h2>Recent Dataset Uploads</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Uploaded By</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>Fashion_trend.csv</td>
+                    <td>Md. Sahid Alam</td>
+                    <td>25 December 2025</td>
+                    <td>
+                        <a href="fashion_products.html" class="btn-table">Download</a>
+                        <a href="index.html" class="btn-table delete">Delete</a>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>
+        © 2026 FashionTrend AI | Admin Panel<br>
+        Built with Flask, Python & Machine Learning
+        by Md. Sahid Alam
+    </p>
+
+
+
+
+
+    
+</footer>
+<link rel="stylesheet" href="../static/css/admin.css">
+</body>
+</html>

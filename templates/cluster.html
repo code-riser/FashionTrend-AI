@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FashionTrend AI | Customer Segmentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <i class="fa-solid fa-users"></i>
+        <span>FashionTrend<span class="ai">AI</span></span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="predict.html">Predict</a>
+        <a href="model_control.html" class="active">Cluster</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>🧠 Customer Segmentation</h1>
+        <p>Upload a CSV file to cluster customers into segments using AI models.</p>
+
+        <form action="{{ url_for('cluster_route') }}" method="POST" enctype="multipart/form-data" class="upload-box">
+            <input type="file" name="dataset" accept=".csv" required>
+            <button type="submit" class="btn-primary">
+                <i class="fa-solid fa-upload"></i> Upload & Cluster
+            </button>
+        </form>
+
+            <div class="flash-messages">
+                
+                    <div class="flash {{ category }}">Good Analysis</div>
+                
+            </div>
+        
+
+
+            <div class="table-container">
+                
+            </div>
+        
+    </div>
+</section>
+<link rel="stylesheet" href="../static/css/preclu.css">
+</body>
+</html>

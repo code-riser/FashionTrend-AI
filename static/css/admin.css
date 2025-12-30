@@ -1,0 +1,247 @@
+/* ================= GENERAL STYLES (Already included in dashboard, reuse) ================= */
+body {
+    background-color: #0f1b2b;
+    color: #cbd5e1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16223b;
+    padding: 15px 50px;
+    border-bottom: 1px solid #1a2a44;
+    flex-wrap: wrap;
+}
+
+.main-header .logo {
+    font-size: 1.8rem;
+    color: #00fff0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-header .logo .ai {
+    color: #00ffe0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00fff0;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-logout {
+    padding: 6px 15px;
+    background-color: #00fff0;
+    color: #0f1b2b;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #00d4c0;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(135deg, #0f1b2b, #16223b);
+    padding: 60px 50px;
+    text-align: center;
+    border-bottom: 1px solid #1a2a44;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #00fff0;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #cbd5e1;
+}
+
+/* ================= ADMIN CARDS ================= */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 30px 50px;
+}
+
+.dashboard-card {
+    background: #1f2d4a;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #00fff0;
+    box-shadow: 0 6px 15px rgba(0,255,240,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,255,240,0.4);
+}
+
+.dashboard-card h3 {
+    color: #00fff0;
+    margin-bottom: 12px;
+}
+
+.dashboard-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #00fff0;
+    color: #0f1b2b;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #00d4c0;
+}
+
+/* ================= TABLE STYLES ================= */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f2d4a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #16223b;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #cbd5e1;
+}
+
+th {
+    font-weight: 600;
+    color: #00fff0;
+}
+
+tr:nth-child(even) {
+    background-color: #1a2a44;
+}
+
+tr:hover {
+    background-color: #253556;
+}
+
+.btn-table {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-right: 5px;
+    background-color: #00fff0;
+    color: #0f1b2b;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.btn-table.delete {
+    background-color: #ff3c38;
+    color: #fff;
+}
+
+.btn-table:hover {
+    opacity: 0.8;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #16223b;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1a2a44;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    .user-actions {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+
+    .table-container {
+        margin: 20px;
+    }
+}
