@@ -3,8 +3,8 @@
 <P>A beginner-friendly machine learning project that predicts stock market trends using technical indicators and advanced ML algorithms.
 </P>
 
-<div><p>📄 Project Report: <a href="https://drive.google.com/file/d/1zFhHnV1hn62Dh5-DuvCTRpgGqrKmhHDq/view?usp=sharing" alt="Report"> View Report </a></p> <br>
-<p>📊 Live Dashboard: <a href=""> Launch Dashboard </a></p><br>
+<div><p>📄 Project Report: <a href="https://drive.google.com/file/d/1zFhHnV1hn62Dh5-DuvCTRpgGqrKmhHDq/view?usp=sharing" alt="Report"> View Report </a></p> 
+<p>📊 Live Dashboard: <a href=""> Launch Dashboard </a></p>
 <p>🎥 Video Demo & Presentation: <a href="" >Watch Demo </a></p>
 </div>
 
